@@ -80,6 +80,7 @@
   padding: $modal-title-padding;
   border-bottom: 1px solid $modal-header-border-color;
   @include clearfix;
+  background-color: #B222A6;
 }
 // Close icon
 .modal-header .close {
@@ -90,6 +91,8 @@
 .modal-title {
   margin: 0;
   line-height: $modal-title-line-height;
+  color: white;
+  
 }
 
 // Modal body

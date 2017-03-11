@@ -14,3 +14,4 @@ Degrades
 9: F291EA
 
 Color Oscuro: B222A6
+Extra claro: F2DAF0

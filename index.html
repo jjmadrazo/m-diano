@@ -7,11 +7,13 @@
     
     <title>Mediaciones Diano</title>
     
+    <!-- ESTILOS -->
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/diano.css">
     
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
     <header>
        <!-- SLIDESHOW -->
         <div id="diano-slider" class="carousel slide" data-ride="carousel">
@@ -43,7 +45,7 @@
             <a class="right carousel-control" href="#diano-slider" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
         </div>
         <!-- MENU -->
-        <nav class="navbar navbar-default navbar-static-top" style="box-shadow: 0px 5px 5px rgba(0,0,0,.5);" role="navigation">
+        <nav class="navbar navbar-default" data-spy="affix" id="md-affix" style="box-shadow: 0px 5px 5px rgba(0,0,0,.5);" role="navigation">
             <div class="container">   
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -52,12 +54,14 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">·MEDIACIONES·DIANO·</a>
+                    <a class="navbar-brand" href="#">
+                        <img src="img/md_logo-8.png" height="100%" alt="Mediaciones Diano">
+                    </a>
                 </div>
                 <div class="collapse navbar-collapse navbar-ex1-collapse">
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="#">HOME</a></li>
-                        <li><a href="#">ANDREA DIANO</a></li>
+                        <li><a href="#diano">ANDREA DIANO</a></li>
                         <li><a href="#">SOLICITAR MEDIACION</a></li>
                         <li><a href="#">CONTACTO</a></li>
                     </ul>
@@ -67,29 +71,40 @@
     </header>
     
     <main>
+       <div id="diano"></div>
         <div class="container">
             <div class="row">
                 <div class="col-md-9">
                     <!-- DIANO -->                
                     <div class="row">
-                        <div class="col-md-4">
+                        <div class="col-md-4 hidden-sm hidden-xs" style="padding-top: 2rem;">
                             <img src="img/andrea.jpg" class="img-responsive" alt="Andrea Diano">
                         </div>
+                        <div class="col-sm-12 hidden-md hidden-lg" style="margin-bottom: 2rem;">
+                            <div class="row">
+                                <div class="col-xs-4 col-xs-offset-4">
+                                    <img src="img/andrea.jpg" class="img-responsive" alt="Andrea Diano">
+                                </div>
+                            </div>
+                        </div>
                         <div class="col-md-8">
-                           <h3>Mediadora Andrea Diano</h3>
-                           <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.</p>
-                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit accusantium illum eaque vitae, voluptates fuga iusto velit. Voluptate, quis, vero? Rerum quae quia, architecto sunt eaque dolorum qui provident velit.</p>
+                           <h3>Mediadora Andrea Silvano Diano</h3>
+                           <p>Mi nombre es Andrea Silvano Diano, Argentina. Recibida de Abogacía en la Universidad de Buenos Aires, ejerciendo como abogada desde 1993, a la par, desde 1998 ejerzo como Mediadora habilitada en el Registro de Mediadores y en el Registro de Mediadores Familiares del Ministerio de Justicia y Derechos Humanos de la Nación. Capacitada en la Fundación Libra y perteneciendo al primer grupo de mediadores que obtuvo la matrícula habilitante del Ministerio de Justicia y Derechos Humanos de la Nación mediante la aprobación del examen de ingreso.</p>
+                           <p>Desde 2015 soy Conciliadora en las Relaciones de Consumo, capacitada por la Secretaría de Comercio del Ministerio de Economía y Finanzas Públicas de la Nación, con matrícula habilitante del Registro Nacional de Conciliadores de Consumo otorgada por el Ministerio de Justicia y Derechos Humanos de la Nación.</p>
+                           <p>En el año 1996 se instauró la Mediación en nuestro país, me di cuenta que de forma innata venía aplicando este oficio de mediar en el plano personal y profesional en el ejercicio de la abogacía porque creí y creo firmemente en que hay otras vías de solución de conflictos más prácticas que la vía judicial.</p>
+                           <p>Tengo una larga experiencia como mediador prejudicial, con un porcentaje de soluciones y acuerdos. Trabajo en mediaciones familiares, civiles, comerciales. Por otro lado, tengo una vasta experiencia en mediación en conflictos en la propiedad horizontal y en conflictos que se suscitan entre vecinos.</p>
+                           <p>Desde mayo del 2009 soy socia activa de la Unión de Mediadores Prejudiciales, asociación civil más importante de la República Argentina que nuclea a los mediadores, en 2011 me sumé a su comisión directiva trabajando tenazmente en beneficio de la Mediación y de los Mediadores.</p>
                         </div>
                     </div>
                     <div class="col-md-12 hidden-sm hidden-xs">
                         <!-- QUE ES LA MEDIACION -->
                         <hr>
-                        <h3>¿Qué es la mediación?</h3>
+                        <h3>¿Qué es la mediación prejudicial?</h3>
                         <p>La Mediación es un modelo de solución de conflictos, que mediante la intervención de un “tercero” neutral e imparcial, ayuda a dos o más personas a comprender el origen de sus diferencias, a reconocer las causas y consecuencias de lo ocurrido, a confrontar visiones y a encontrar soluciones para resolverlas.</p>
                         <p>La Mediación, como proceso pacífico de resolución de disputas, contribuye a generar un cambio en las conductas de las personas y sus relaciones humanas, facilitando una mejor calidad de vida de la población y ayudando a promover la paz social.</p>
                         <p>La Mediación intenta que se logre un resultado mutuamente satisfactorio, en forma rápida y eficaz en términos de tiempo, dinero y esfuerzo, objetivos difíciles de conseguir cuando los conflictos terminan siendo dirimidos en un juicio.</p>
                         
-                        <!-- PRINCIPIOS DE L AMEDIACION -->
+                        <!-- PRINCIPIOS DE LA MEDIACION -->
                         <hr>
                         <h3>Principios de la Mediación</h3>
                         <div class="row">
@@ -154,7 +169,7 @@
                         
                         <!-- Ventajas de la Mediación -->
                         <hr>
-                        <h3>Ventajas de la Mediación.</h3>
+                        <h3>Ventajas de la Mediación</h3>
                         <ul>
                             <li>Compromiso y protagonismo de las partes en la solución y con el resultado.</li>
                             <li>Facilita y conserva las relaciones interpersonales de las partes involucradas.</li>
@@ -166,7 +181,7 @@
                         
                         <!-- El rol del Mediador -->
                         <hr>
-                        <h3>El rol del Mediador.</h3>
+                        <h3>El rol del Mediador</h3>
                         <p>Es un facilitador de la comunicación, no es juez, ni abogado de parte ni psicólogo. El poder de decisión está en manos de las partes. El mediador ayuda a las personas a identificar las cuestiones en las que discrepan, a descubrir sus necesidades, a generar posibles opciones de soluciones y a tomar decisiones bien informadas.</p>
                         
                         <!-- Conflictos que pueden resolverse a través de la Mediación -->
@@ -195,7 +210,7 @@
                         
                         <!-- ¿Fue convocado a una mediación? -->
                         <hr>
-                        <h3>¿Fue convocado a una mediación?</h3>
+                        <h3>¿Fue convocado a una mediación prejudicial?</h3>
                         <p>En caso de que haya sido citado a asistir a una audiencia de mediación en mi oficina, resulta relevante la información que le detallo:</p>
                         <ul>
                             <li>Concurra a la mediación sabiendo que es un espacio de diálogo, en el que intentaremos trabajar a fin de resolver el conflicto.</li>
@@ -225,11 +240,11 @@
                                     <h3 class="panel-title">SOLICITAR MEDIACIÓN</h3>
                                 </div>
                                 <div class="panel-body">
-                                    <h4>Estimado Letrado:</h4>
+                                    <h4>Estimado/a Letrado/a:</h4>
                                     <p>Al enviar el formulario que se encuentra al pie del presente, recibirá un email de confirmación y a la brevedad me contactaré con Ud. a fin consensuar la fecha de la audiencia de mediación.</p>
                                     <p>En caso de que necesite incorporar información adicional (por ejemplo para accidentes de tránsito) podrá hacerlo en la sección final “Datos Complementarios”.</p>
                                     <p>Por favor lea el AVISO LEGAL disponible al pie de página como paso previo al envío del Formulario.</p>
-                                    <p>Si tiene dudas, dirija su consulta a …………..@..........</p>
+                                    <p>Si tiene dudas, dirija su consulta a <a href="mailto:mediaciones.diano@gmail.com">mediaciones.diano@gmail.com</a></p>
                                     <!-- Button trigger modal -->
                                     <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">
                                         SOLICITAR MEDIACIÓN
@@ -247,7 +262,7 @@
                                                     ...
                                                 </div>
                                                 <div class="modal-footer">
-                                                     <button type="button" class="btn btn-primary">ENVIAR</button>
+                                                     <button type="button" class="btn btn-default">ENVIAR</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -263,21 +278,36 @@
                         <div class="col-md-12">
                             <div class="well">
                                 <h3 class="text-center">CONTACTO</h3>
-                                <form>
-                                    <div class="form-group">
-                                        <label for="nombre">Nombre</label>
-                                        <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <form>
+                                            <div class="form-group">
+                                                <label for="nombre">Nombre</label>
+                                                <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="correo">Correo Electrónico</label>
+                                                <input type="email" class="form-control" id="correo" placeholder="Correo Electrónico">
+                                            </div>
+                                             <div class="form-group">
+                                                <label for="mensaje">Mensaje</label>
+                                                <textarea class="form-control" id="mensaje" rows="3"></textarea>
+                                            </div>
+                                            <button type="submit" class="btn btn-default">ENVIAR</button>
+                                        </form>
+                                        <address style="margin-top: 2rem;">
+                                          <strong>Mediaciones Diano</strong><br>
+                                          Montevideo 373 Piso:6 Of. 67 C.A.B.A.<br>
+                                          <abbr title="Teléfono">T:</abbr> +54 11 4373-8690 <br>
+                                          <abbr title="Celular">C:</abbr> +54 11 4176-6232 <br>
+                                          <abbr title="Correo Electrónico">CE: </abbr><a href="mailto:andrea_diano@hotmail.com">andrea_diano@hotmail.com</a> <br>
+                                          <abbr title="Correo Electrónico">CE: </abbr><a href="mailto:mediaciones.diano@gmail.com">mediaciones.diano@gmail.com</a> 
+                                        </address>
                                     </div>
-                                    <div class="form-group">
-                                        <label for="correo">Correo Electrónico</label>
-                                        <input type="email" class="form-control" id="correo" placeholder="Correo Electrónico">
+                                    <div class="col-md-6">
+                                        <iframe width="100%" height="430" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJewjQV8HKvJUR_2pt923zxqA&key=AIzaSyC0zmnBizZj-17SKvPfigy0YhWjOzR06iQ" allowfullscreen></iframe>
                                     </div>
-                                     <div class="form-group">
-                                        <label for="mensaje">Mensaje</label>
-                                        <textarea class="form-control" id="mensaje" rows="3"></textarea>
-                                    </div>
-                                    <button type="submit" class="btn btn-default">ENVIAR</button>
-                                </form>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -295,12 +325,40 @@
                         <li><a href="">Marco legal</a></li>
                     </ul>
                 </div>
-            </div>
+            </div>            
         </div>
+        
+        <!-- FOOTER -->
+        <footer class="container-fluid mdiano-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 mdiano-cr">&copy;2017 MEDIACIONES DIANO </div>
+                    <div class="col-md-4 mdiano-social">
+                        <a href="#" class="fa fa-linkedin-square" aria-hidden="true"></a>
+                        <a href="#" class="fa fa-facebook-square" aria-hidden="true"></a>
+                        <a href="#" class="fa fa-google-plus-square" aria-hidden="true"></a>
+                    </div>
+                    <div class="col-md-4">
+                        <!--<a href="http://www.madrastudio.com/" target="_blank"><img src="img/by_ms_fondo_oscuro-8.png" class="mdiano-ms" alt="MADRA Studio"></a>-->
+                    </div>
+                </div>
+            </div>
+        </footer>
     </main>
     
     <!-- JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
+    <script>
+        $('#md-affix').affix({
+          offset: {
+            top: function () {
+              return (this.top = $('.mdiano-slideshow').outerHeight(true))    
+            },
+          }
+        })
+    </script>
+    
 </body>
 </html>
