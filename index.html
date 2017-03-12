@@ -39,13 +39,20 @@
                 </div>
                 <div class="item">
                     <div class="mdiano-slideshow" style="background-image:url('img/slider/diano_slider_3.jpg');"></div>
+                    <div class="carousel-caption">
+                        <h3>"Nada dura por siempre, ni siquiera tus problemas." </h3>
+                        <p>Arnold H. Glasow</p>
+                    </div>
                 </div>
             </div>
             <a class="left carousel-control" href="#diano-slider" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
             <a class="right carousel-control" href="#diano-slider" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
         </div>
+    </header>
+    
+    <main>
         <!-- MENU -->
-        <nav class="navbar navbar-default" data-spy="affix" id="md-affix" style="box-shadow: 0px 5px 5px rgba(0,0,0,.5);" role="navigation">
+        <nav class="navbar navbar-default" id="md-affix" style="box-shadow: 0px 5px 5px rgba(0,0,0,.5);" role="navigation">
             <div class="container">   
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -68,11 +75,7 @@
                 </div>
             </div>
         </nav>
-    </header>
-    
-    <main>
-       <div id="diano"></div>
-        <div class="container">
+        <div class="container" id="diano">
             <div class="row">
                 <div class="col-md-9">
                     <!-- DIANO -->                
@@ -314,7 +317,7 @@
                 </div>
                 
                 <div class="col-md-3 hidden-sm hidden-xs">
-                    <ul class="mdiano-menu-aside">
+                    <ul class="mdiano-menu-aside" >
                         <li><a href="">¿Qué es la mediación?</a></li>
                         <li><a href="">Principios de la Mediación</a></li>
                         <li><a href="">Ventajas de la Mediación.</a></li>
@@ -351,13 +354,29 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     
     <script>
-        $('#md-affix').affix({
-          offset: {
-            top: function () {
-              return (this.top = $('.mdiano-slideshow').outerHeight(true))    
-            },
-          }
-        })
+    $(document).ready(function(){
+        /* affix the navbar after scroll below header */
+        $(".navbar").affix({offset: {top: $("#diano-slider").outerHeight(true)} });
+    });
+    </script>
+    
+    <!-- MENU ASIDE FIJO -->
+    <script>
+    posicionarMenu();
+
+    $(window).scroll(function() {    
+        posicionarMenu();
+    });
+
+    function posicionarMenu() {
+        var altura_del_header = $('#diano-slider').outerHeight(true);
+
+        if ($(window).scrollTop() >= altura_del_header){
+            $('.mdiano-menu-aside').addClass('aside-fijo');
+        } else {
+            $('.mdiano-menu-aside').removeClass('aside-fijo');
+        }
+    }
     </script>
     
 </body>

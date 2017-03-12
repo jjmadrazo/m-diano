@@ -3,14 +3,19 @@ body {
 }
 
 .affix {
-      top:0;
-      width: 100%;
-      z-index: 9999 !important;
-  }
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    + .container {
+        padding-top: 90px;
+    }
+}
 
-.navbar {
-      margin-bottom: 0px;
-  }
+.aside-fijo {
+    position: fixed;
+    top: 80px;
+    margin-right: 5vw;
+}
 
 .mdiano-slideshow {
     width: 100%;
@@ -20,8 +25,6 @@ body {
 }
 
 .mdiano-menu-aside {
-    position: fixed;
-    padding: 0px;
     li {
         display: block;
         list-style-type: none;
