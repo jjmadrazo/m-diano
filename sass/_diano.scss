@@ -2,19 +2,15 @@ body {
     position: relative;
 }
 
-.affix {
+.mdianoa-menu-fijo {
+    position: fixed;
     top: 0;
-    width: 100%;
     z-index: 9999;
-    + .container {
-        padding-top: 90px;
-    }
+    width: 100%;
 }
 
-.aside-fijo {
-    position: fixed;
-    top: 80px;
-    margin-right: 5vw;
+.mdiano-main {
+    margin-top: 80px;
 }
 
 .mdiano-slideshow {
@@ -25,10 +21,11 @@ body {
 }
 
 .mdiano-menu-aside {
+    padding: 0;
     li {
         display: block;
         list-style-type: none;
-         width: 100%;
+        width: 100%;
         a {
             background-color: #F23CE2;
             color: white;
@@ -78,6 +75,11 @@ body {
             background-color: #F291EA;
         }
     }
+}
+
+.mdiano-aside-fijo {
+    position: fixed;
+    top: 80px;
 }
 
 hr {

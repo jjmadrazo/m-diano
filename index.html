@@ -52,7 +52,7 @@
     
     <main>
         <!-- MENU -->
-        <nav class="navbar navbar-default" id="md-affix" style="box-shadow: 0px 5px 5px rgba(0,0,0,.5);" role="navigation">
+        <nav class="navbar navbar-default" id="md-menu" style="box-shadow: 0px 5px 5px rgba(0,0,0,.5);" role="navigation">
             <div class="container">   
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -75,7 +75,7 @@
                 </div>
             </div>
         </nav>
-        <div class="container" id="diano">
+        <div class="container" id="md-main">
             <div class="row">
                 <div class="col-md-9">
                     <!-- DIANO -->                
@@ -316,8 +316,8 @@
                     </div>
                 </div>
                 
-                <div class="col-md-3 hidden-sm hidden-xs">
-                    <ul class="mdiano-menu-aside" >
+                <div class="col-md-3 hidden-sm hidden-xs" style="padding: 0;">
+                    <ul class="mdiano-menu-aside">
                         <li><a href="">¿Qué es la mediación?</a></li>
                         <li><a href="">Principios de la Mediación</a></li>
                         <li><a href="">Ventajas de la Mediación.</a></li>
@@ -355,28 +355,28 @@
     
     <script>
     $(document).ready(function(){
-        /* affix the navbar after scroll below header */
-        $(".navbar").affix({offset: {top: $("#diano-slider").outerHeight(true)} });
-    });
-    </script>
-    
-    <!-- MENU ASIDE FIJO -->
-    <script>
-    posicionarMenu();
-
-    $(window).scroll(function() {    
         posicionarMenu();
-    });
 
-    function posicionarMenu() {
-        var altura_del_header = $('#diano-slider').outerHeight(true);
+        $(window).scroll(function() {    
+            posicionarMenu();
+        });
 
-        if ($(window).scrollTop() >= altura_del_header){
-            $('.mdiano-menu-aside').addClass('aside-fijo');
-        } else {
-            $('.mdiano-menu-aside').removeClass('aside-fijo');
+        function posicionarMenu() {
+            var altura_del_header = $('#diano-slider').outerHeight(true);
+            var ancho_del_aside = $('.col-md-3').outerWidth(true);
+
+            if ($(window).scrollTop() >= altura_del_header){
+                $('.navbar').addClass('mdianoa-menu-fijo');
+                $('#md-main').addClass('mdiano-main');
+                $('.mdiano-menu-aside').addClass('mdiano-aside-fijo');
+                $('.mdiano-aside-fijo').css('width', (ancho_del_aside));
+            } else {
+                $('.navbar').removeClass('mdianoa-menu-fijo');
+                $('#md-main').removeClass('mdiano-main');
+                $('.mdiano-menu-aside').removeClass('mdiano-aside-fijo');
+            }
         }
-    }
+    });
     </script>
     
 </body>
