@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/diano.css">
     
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<body id="inicio">
     <header>
        <!-- SLIDESHOW -->
         <div id="diano-slider" class="carousel slide" data-ride="carousel">
@@ -62,15 +62,14 @@
                         <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand" href="#">
-                        <img src="img/md_logo-8.png" height="100%" alt="Mediaciones Diano">
+                        <img src="img/md_logo.png" height="100%" alt="Mediaciones Diano">
                     </a>
                 </div>
                 <div class="collapse navbar-collapse navbar-ex1-collapse">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#diano">ANDREA DIANO</a></li>
-                        <li><a href="#">SOLICITAR MEDIACION</a></li>
-                        <li><a href="#">CONTACTO</a></li>
+                        <li><a href="#inicio">HOME</a></li>
+                        <li><a href="#solicitar">SOLICITAR MEDIACION</a></li>
+                        <li><a href="#contacto">CONTACTO</a></li>
                     </ul>
                 </div>
             </div>
@@ -91,12 +90,11 @@
                             </div>
                         </div>
                         <div class="col-md-8">
-                           <h3>Mediadora Andrea Silvano Diano</h3>
-                           <p>Mi nombre es Andrea Silvano Diano, Argentina. Recibida de Abogacía en la Universidad de Buenos Aires, ejerciendo como abogada desde 1993, a la par, desde 1998 ejerzo como Mediadora habilitada en el Registro de Mediadores y en el Registro de Mediadores Familiares del Ministerio de Justicia y Derechos Humanos de la Nación. Capacitada en la Fundación Libra y perteneciendo al primer grupo de mediadores que obtuvo la matrícula habilitante del Ministerio de Justicia y Derechos Humanos de la Nación mediante la aprobación del examen de ingreso.</p>
-                           <p>Desde 2015 soy Conciliadora en las Relaciones de Consumo, capacitada por la Secretaría de Comercio del Ministerio de Economía y Finanzas Públicas de la Nación, con matrícula habilitante del Registro Nacional de Conciliadores de Consumo otorgada por el Ministerio de Justicia y Derechos Humanos de la Nación.</p>
-                           <p>En el año 1996 se instauró la Mediación en nuestro país, me di cuenta que de forma innata venía aplicando este oficio de mediar en el plano personal y profesional en el ejercicio de la abogacía porque creí y creo firmemente en que hay otras vías de solución de conflictos más prácticas que la vía judicial.</p>
-                           <p>Tengo una larga experiencia como mediador prejudicial, con un porcentaje de soluciones y acuerdos. Trabajo en mediaciones familiares, civiles, comerciales. Por otro lado, tengo una vasta experiencia en mediación en conflictos en la propiedad horizontal y en conflictos que se suscitan entre vecinos.</p>
-                           <p>Desde mayo del 2009 soy socia activa de la Unión de Mediadores Prejudiciales, asociación civil más importante de la República Argentina que nuclea a los mediadores, en 2011 me sumé a su comisión directiva trabajando tenazmente en beneficio de la Mediación y de los Mediadores.</p>
+                           <h3>Andrea Diano</h3>
+                           <p>Recibida de abogada en la Facultad de Derecho de la Universidad de Buenos Aires, ejerciendo la abogacía desde el año 1993 (To. 50, Fo. 481, Colegio Público de Abogados de la Capital Federal). A la par, desde 1998 ejerzo como Mediadora habilitada en el Registro de Mediadores y en el Registro de Mediadores Familiares del Ministerio de Justicia y Derechos Humanos de la Nación, bajo la Matrícula Nº 3.777. Capacitada en la Fundación Libra y perteneciendo al primer grupo de mediadores que obtuvo la matrícula habilitante del Ministerio de Justicia y Derechos Humanos de la Nación mediante la aprobación del examen de ingreso. Desde 2015 soy Conciliadora en las Relaciones de Consumo, capacitada por la Secretaría de Comercio del Ministerio de Economía y Finanzas Públicas de la Nación, con matrícula habilitante del Registro Nacional de Conciliadores de Consumo otorgada por el Ministerio de Justicia y Derechos Humanos de la Nación Nº 152.</p>
+                           <p>Habiéndose instaurado en nuestro país en el año 1996, la Mediación Prejudicial, y habiendo tomado contacto con dicha temática, advertí que de una forma innata aplicaba este oficio de mediar en el plano personal y profesional, en el ejercicio de la abogacía porque entendía y continúo entendiendo de manera más ferviente que existen otras vías de solución de conflictos más prácticas que la vía judicial.</p>
+                           <p>Tengo una larga experiencia como mediadora prejudicial, con un alto índice de soluciones y acuerdos. Trabajo en mediaciones familiares, civiles, y comerciales. Por otro lado, tengo una vasta experiencia en intervenir como mediadora prejudicial en los conflictos que se suscitan en el seno de la propiedad horizontal y en los conflictos que se generan entre vecinos.</p>
+                           <p>Desde mayo del 2009 soy socia activa de la Unión de Mediadores Prejudiciales, asociación civil más importante de la República Argentina, que nuclea a los mediadores. Desde el año 2011 y hasta la actualidad formo parte de su comisión directiva trabajando tenazmente en beneficio de la Mediación y de los Mediadores.</p>
                         </div>
                     </div>
                     <div class="col-md-12 hidden-sm hidden-xs">
@@ -225,7 +223,7 @@
                         
                         <!-- MARCO LEGAL -->
                         <hr>
-                        <h3>Marco legal</h3>
+                        <h3 id="legal" style="padding-top: 80px">Marco legal</h3>
                         <ul>
                             <li>Ley 26.589</li>
                             <li>Dec. 1467/2011</li>
@@ -237,7 +235,7 @@
                     
                     <!-- SOLICITAR MEDIACIÓN -->
                     <div class="row">
-                        <div class="col-md-12">
+                        <div class="col-md-12" id="solicitar" style="padding-top: 80px;">
                             <div class="panel panel-default">
                                 <div class="panel-heading">
                                     <h3 class="panel-title">SOLICITAR MEDIACIÓN</h3>
@@ -278,7 +276,7 @@
                     <!-- CONTACTO -->
                     <hr>
                     <div class="row">
-                        <div class="col-md-12">
+                        <div class="col-md-12" id="contacto" style="padding-top: 80px;">
                             <div class="well">
                                 <h3 class="text-center">CONTACTO</h3>
                                 <div class="row">
@@ -318,14 +316,14 @@
                 
                 <div class="col-md-3 hidden-sm hidden-xs" style="padding: 0;">
                     <ul class="mdiano-menu-aside">
-                        <li><a href="">¿Qué es la mediación?</a></li>
-                        <li><a href="">Principios de la Mediación</a></li>
-                        <li><a href="">Ventajas de la Mediación.</a></li>
-                        <li><a href="">El rol del Mediador.</a></li>
-                        <li><a href="">Conflictos que pueden resolverse a través de la Mediación</a></li>
-                        <li><a href="">¿Cómo es el proceso de mediación propiamente dicho?</a></li>
-                        <li><a href="">¿Fue convocado a una mediación?</a></li>
-                        <li><a href="">Marco legal</a></li>
+                        <li><a href="#que_es">¿Qué es la mediación?</a></li>
+                        <li><a href="#principios">Principios de la Mediación</a></li>
+                        <li><a href="#ventajas">Ventajas de la Mediación.</a></li>
+                        <li><a href="#rol">El rol del Mediador.</a></li>
+                        <li><a href="#comflictos">Conflictos que pueden resolverse a través de la Mediación</a></li>
+                        <li><a href="#proceso">¿Cómo es el proceso de mediación propiamente dicho?</a></li>
+                        <li><a href="#convocado">¿Fue convocado a una mediación?</a></li>
+                        <li><a href="#legal">Marco legal</a></li>
                     </ul>
                 </div>
             </div>            
@@ -355,6 +353,15 @@
     
     <script>
     $(document).ready(function(){
+        
+        //OCULTAR COLLAPSE MENU
+        $(document).on('click','.navbar-collapse.in',function(e) {
+          if( $(e.target).is('a') ) {
+              $(this).collapse('hide');
+          }
+        });
+        
+        // MENU FIJO
         posicionarMenu();
 
         $(window).scroll(function() {    
@@ -376,8 +383,26 @@
                 $('.mdiano-menu-aside').removeClass('mdiano-aside-fijo');
             }
         }
+        
+        //SLOW SCROLL
+        $('a[href^="#"]').on('click',function (e) {
+          e.preventDefault();
+
+
+          var target = this.hash;
+          var $target = $(target);
+
+
+          $('html, body').stop().animate({
+              'scrollTop': $target.offset().top
+          }, 1500, 'swing', function () {
+              window.location.hash = target;
+          });
+      });
     });
     </script>
+    
+
     
 </body>
 </html>
