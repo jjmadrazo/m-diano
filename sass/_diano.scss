@@ -13,6 +13,17 @@ body {
     margin-top: 80px;
 }
 
+.mdiano-ancla {
+    width: 100%;
+    height: 20px;
+    padding: 0;
+    background: #B222A6; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#B222A6, transparent); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#B222A6, transparent); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#B222A6, transparent); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#B222A6, transparent); /* Standard syntax */ 
+}
+
 .mdiano-slideshow {
     width: 100%;
     height: 50vh;
@@ -27,7 +38,7 @@ body {
         list-style-type: none;
         width: 100%;
         a {
-            background-color: #F23CE2;
+            background-color: #47004C;
             color: white;
             display: block;
             width: 100%;
@@ -42,37 +53,37 @@ body {
     }
     li + li {
         a {
-            background-color: #F249E3;
+            background-color: #5F0066;
         }
     }
     li + li +li {
         a {
-            background-color: #F255E4;
+            background-color: #8F0099;
         }
     }
     li + li + li + li {
         a {
-            background-color: #F261E5;
+            background-color: #BE00CC;
         }
     }
     li + li + li + li + li {
         a {
-            background-color: #F26DE6;
+            background-color: #EE00FF;
         }
     }
     li + li + li + li + li + li {
         a {
-            background-color: #F279E8;
+            background-color: #F133FF;
         }
     }
     li + li + li + li + li + li + li {
         a {
-            background-color: #F285E9;
+            background-color: #F566FF;
         }
     }
     li + li + li + li + li + li + li + li {
         a {
-            background-color: #F291EA;
+            background-color: #F899FF;
         }
     }
 }

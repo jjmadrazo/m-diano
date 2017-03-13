@@ -1,17 +1,5 @@
 Paleta de colores
 
-Principal: F22EE1
+Principal: B222A6
 
-Degrades
-1: F22EE1 Principal
-2: F23CE2
-3: F249E3
-4: F255E4
-5: F261E5
-6: F26DE6
-7: F279E8
-8: F285E9
-9: F291EA
-
-Color Oscuro: B222A6
 Extra claro: F2DAF0
