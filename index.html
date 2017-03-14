@@ -68,6 +68,7 @@
                 <div class="collapse navbar-collapse navbar-ex1-collapse">
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="#inicio">HOME</a></li>
+                        <li class="hidden-sm hidden-md hidden-lg"><a href="#que_es_movil">¿QUÉ ES LA MEDIACIÓN PREJUDICIAL?</a></li>
                         <li><a href="#solicitar">SOLICITAR MEDIACION</a></li>
                         <li><a href="#contacto">CONTACTO</a></li>
                     </ul>
@@ -97,6 +98,7 @@
                            <p>Desde mayo del 2009 soy socia activa de la Unión de Mediadores Prejudiciales, asociación civil más importante de la República Argentina, que nuclea a los mediadores. Desde el año 2011 y hasta la actualidad formo parte de su comisión directiva trabajando tenazmente en beneficio de la Mediación y de los Mediadores.</p>
                         </div>
                     </div>
+                    <!-- SOLO VISIBLE EN PC -->
                     <div class="hidden-xs">
                         <!-- QUE ES LA MEDIACION -->
                         <div id="que_es" style="height: 70px"></div>
@@ -274,6 +276,69 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- SOLO VISIBLE EN MOVILES -->
+                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    Button with data-target
+                    </button>
+                    <div class="collapse" id="collapseExample">
+                        <div class="well">
+                            ...
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#boton2" aria-expanded="false" aria-controls="boton2">
+                    Button with data-target
+                    </button>
+                    <div class="collapse" id="boton2">
+                        <div class="well">
+                            ...
+                        </div>
+                    </div>
+
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title">
+        <abutton role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Collapsible Group Item #1
+        </button>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingTwo">
+      <h4 class="panel-title">
+        <button class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Collapsible Group Item #2
+        </button>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+      <div class="panel-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingThree">
+      <h4 class="panel-title">
+        <button class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Collapsible Group Item #3
+        </button>
+      </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+      <div class="panel-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+</div>
                     
                     <!-- SOLICITAR MEDIACIÓN -->
                     <div class="row">
@@ -440,7 +505,7 @@
           }, 1000, 'swing', function () {
               window.location.hash = target;
           });
-      });
+        });
     });
     </script>
     
