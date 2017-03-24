@@ -326,7 +326,7 @@
                                     <p>Al enviar el formulario que se encuentra al pie del presente, recibirá un email de confirmación y a la brevedad me contactaré con Ud. a fin consensuar la fecha de la audiencia de Mediación.</p>
                                     <p>En caso de que necesite incorporar información adicional (por ejemplo para accidentes de tránsito) podrá hacerlo en la sección final “Datos Complementarios”.</p>
                                     <!--<p>Por favor lea el AVISO LEGAL disponible al pie de página como paso previo al envío del Formulario.</p>-->
-                                    <p>Si tiene dudas, dirija su consulta a <a href="mailto:contacto@mediacionesdiano.com">contacto@mediacionesdiano.com</a></p>
+                                    <p>Si tiene dudas, dirija su consulta a <a href="mailto:contacto@mediacionesdiano.com.ar">contacto@mediacionesdiano.com.ar</a></p>
                                     <!-- Button trigger modal -->
                                     <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">
                                         SOLICITAR MEDIACIÓN
@@ -374,9 +374,9 @@
                                                                     <div class="col-sm-4">
                                                                         <div class="form-group">
                                                                             <label for="calidad_rep">Calidad en la que asiste *</label>
-                                                                            <select class="form-control" id="calidad_rep">
-                                                                                <option>Patrocinante</option>
-                                                                                <option>Apoderado</option>
+                                                                            <select class="form-control" name="calidad_rep" id="calidad_rep">
+                                                                                <option value="Patrocinante">Patrocinante</option>
+                                                                                <option value="Apoderado">Apoderado</option>
                                                                             </select>
                                                                         </div>
                                                                     </div>
@@ -389,10 +389,10 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <!-- DATOS DEL REQUIRIENTE -->
+                                                        <!-- DATOS DEL REQUIRENTE -->
                                                         <div class="panel panel-default">
                                                             <div class="panel-heading">
-                                                                <h3 class="panel-title">DATOS DEL REQUIRIENTE</h3>
+                                                                <h3 class="panel-title">DATOS DEL REQUIRENTE</h3>
                                                             </div>
                                                             <div class="panel-body" style="background-color: #F2EBF1;">
                                                                 <div class="form-group">
@@ -402,17 +402,17 @@
                                                                 <div class="form-inline">
                                                                     <div class="form-group">
                                                                         <label for="documento_req">Documento o CUIT *</label>
-                                                                        <select class="form-control" id="documento_req" required>
-                                                                            <option>DNI</option>
-                                                                            <option>LC</option>
-                                                                            <option>LE</option>
-                                                                            <option>Pasaporte</option>
-                                                                            <option>CUIT</option>
+                                                                        <select class="form-control" name="documento_req" id="documento_req" required>
+                                                                            <option value="DNI">DNI</option>
+                                                                            <option value="LC">LC</option>
+                                                                            <option value="LE">LE</option>
+                                                                            <option value="Pasaporte">Pasaporte</option>
+                                                                            <option value="CUIT">CUIT</option>
                                                                         </select>
                                                                     </div>
                                                                     <div class="form-group">
                                                                         <label for="no_documento_req">Nº *</label>
-                                                                        <input type="text" class="form-control" id="no_documento_req" required>
+                                                                        <input type="text" class="form-control" name="no_documento_req" id="no_documento_req" required>
                                                                     </div>
                                                                 </div>
                                                                 <div class="form-group">
@@ -457,8 +457,10 @@
                                                             </div>
                                                             <div class="panel-body" style="background-color: #F2EBF1;">
                                                                 <div class="form-group">
-                                                                    <label for="monto_mediacion">Monto de la mediación</label>
-                                                                    <input type="text" class="form-control" name="monto_mediacion" id="monto_mediacion">
+                                                                    <div class="input-group">
+                                                                        <div class="input-group-addon">$</div>
+                                                                        <input type="text" class="form-control" name="monto_mediacion">
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -468,10 +470,7 @@
                                                                 <h3 class="panel-title">DATOS COMPLEMENTARIOS O ACLARACIONES</h3>
                                                             </div>
                                                             <div class="panel-body" style="background-color: #F2EBF1;">
-                                                                <div class="form-group">
-                                                                    <label for="aclaraciones">Datos complementarios o aclaraciones</label>
-                                                                    <textarea class="form-control" name="aclaraciones" id="aclaraciones" rows="4"></textarea>
-                                                                </div>
+                                                                <textarea class="form-control" name="aclaraciones" rows="4"></textarea>
                                                             </div>
                                                         </div>
                                                         <button type="submit" class="btn btn-default">ENVIAR FORMULARIO</button>
@@ -513,7 +512,7 @@
                                           Montevideo 373 Piso:6 Of. 67 C.A.B.A.<br>
                                           <abbr title="Teléfono">T:</abbr> +54 11 4373-8690 <br>
                                           <abbr title="Celular">C:</abbr> +54 11 4176-6232 <br>
-                                          <abbr title="Correo Electrónico">CE:</abbr><a href="mailto:contacto@mediacionesdiano.com"> contacto@mediacionesdiano.com</a> <br>
+                                          <abbr title="Correo Electrónico">CE:</abbr><a href="mailto:contacto@mediacionesdiano.com.ar"> contacto@mediacionesdiano.com.ar</a> <br>
                                         </address>
                                     </div>
                                     <div class="col-md-6">

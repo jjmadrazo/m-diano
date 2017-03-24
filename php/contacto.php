@@ -29,9 +29,11 @@ $success = mail($to, $subject, $emailbody, $header);
 
 // Redireccionamiento despues de enviar el mensaje
 if ($success){
+  echo "<script language='javascript'>alert('Mensaje enviado');</script>";
   print "<meta http-equiv=\"refresh\" content=\"0;URL=http://www.mediacionesdiano.com.ar\">";
 }
 else{
+  echo "<script language='javascript'>alert('Error, no se pudo enviar el mensaje');</script>";
   print "<meta http-equiv=\"refresh\" content=\"0;URL=http://www.mediacionesdiano.com.ar\">";
 }
 ?>
